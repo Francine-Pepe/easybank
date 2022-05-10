@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+.navbar {
+  width: 100vw;
+  height: auto;
+  padding: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  background-color:aqua
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+.menu .list {
+  display: flex;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.list_container {
+  width: 5em;
+  height: 2em;
+  text-align: center;
+}
+
+.list_container:hover {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    )
+    1;
+  padding: 0 auto;
+}
+
+.list li a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  font-family: "Public Sans";
+}
+
+.list li a:hover {
+  color: hsl(233, 26%, 24%);
+}
+
+.link_container {
+  width: 12em;
+  height: 4em;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 40px;
+}
+
+.link_container a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.opacity_container:hover div {
+  background: linear-gradient(
+    to right,
+    rgba(49, 211, 92, 0.5),
+    rgba(43, 183, 218, 0.5)
+  );
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 787px) {
+  .menu {
+    width: 80vw;
+    max-height: 0;
+    overflow: hidden;
+    background-color: hsl(233, 8%, 62%);
+    border-radius: 5px;
+    margin-top: 2em;
+  }
+
+  .menu ul li a {
+    color: hsl(212, 27%, 19%);
+    font-family: inherit;
+  }
+
+  .menu .list_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: transparent;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+
+ 
+
+  .link_container {
+    display: none;
+  }
+
+  .list_container:hover {
+    border-bottom: none;
+  }
+}
