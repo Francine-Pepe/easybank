@@ -29,17 +29,20 @@ export default function MainImages() {
         >
           <div className="main_bg_image_top">
             <img
+              id="top_image"
               src={Bg_image_top}
-              alt=""
+              alt="background_image"
               style={{
-                height: '100%',
+                width: "100%",
+                height: "100%",
                 backgroundPosition: "top",
-                overflowX: "hidden",
-                overflowY: 'auto',
+                // overflowX: "hidden",
+                overflowY: "visible",
                 objectFit: "cover",
-                zIndex: "2",
+                zIndex: "1",
                 objectPosition: "130px -120px",
-                styleTop
+                // styleTop,
+                
               }}
             />
           </div>

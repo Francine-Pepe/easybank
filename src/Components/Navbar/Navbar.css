@@ -18,7 +18,8 @@
 }
 
 .menu .list {
-  display: flex;
+  display: inline-block;
+  position: relative;
   list-style: none;
   display: flex;
   gap: 2em;
@@ -45,15 +46,60 @@
   text-decoration: none;
   color: hsl(233, 8%, 62%);
   font-family: "Public Sans";
+  display: block;
 }
 
 .list li a:hover {
   color: hsl(233, 26%, 24%);
 }
 
+.list ul {
+  position: absolute;
+}
+
+.list li {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* Hamburger Menu animation */
+
+/* .hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #2D314D;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform .5s, opacity .25s;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+} */
+
 /* Media Queries */
 
 @media only screen and (max-width: 787px) {
+  .menu ul li {
+    display: none;
+  }
   .menu {
     width: 80vw;
     max-height: 0;
@@ -61,6 +107,7 @@
     background-color: hsl(233, 8%, 62%);
     border-radius: 5px;
     margin-top: 2em;
+    display: inline-block;
   }
 
   .menu ul li a {
