@@ -47,6 +47,7 @@ p {
 
 .main_images_container {
   height: fit-content;
+  
 }
 
 .main_bg_image {
@@ -75,6 +76,10 @@ p {
     z-index: 2;
     object-position: 0 0;
     object-fit: cover;
+  }
+
+  .main_bg_image_top #top_image {
+    width: 100vw;
   }
 
   .main_text_container,

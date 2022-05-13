@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
           <div className="social_media">
             {socialMedia.map((socialMedia, index) => (
-              <img src={socialMedia.icon} alt="social media" />
+              <a href="/"><img src={socialMedia.icon} alt="social media" /></a>
             ))}
           </div>
         </div>
