@@ -1,0 +1,50 @@
+.article_container {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: hsl(0, 0%, 98%);
+}
+
+.article_flex_container {
+  width: 100vw;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.articles img {
+  width: 20em;
+  height: 15em;
+}
+
+.articles_padding {
+  padding: 15px;
+}
+
+.articles p {
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.articles h3 {
+font-weight: 400;
+}
+
+.articles h3:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.articles a {
+    text-decoration: none;
+    color: hsl(233, 26%, 24%);
+
+}
+.articles h6 {
+    color: hsl(233, 8%, 62%);
+}
+
+.article_title {
+    margin-top: 1em;
+}
