@@ -57,3 +57,9 @@ padding-top: 1em;
 .article_title {
   padding: 5em 4em;
 }
+
+@media screen and (max-width: 768px) {
+  .article_title {
+    text-align: center;
+  }
+}
