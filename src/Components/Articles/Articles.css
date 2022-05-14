@@ -11,7 +11,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5em;
+  padding-bottom: 5em;
+
 }
 
 .articles img {
@@ -26,10 +27,14 @@
 .articles p {
   font-size: 1em;
   line-height: 1.2;
+  padding-top: 1em;
+
 }
 
 .articles h3 {
 font-weight: 400;
+padding-top: 1em;
+
 }
 
 .articles h3:hover {
@@ -47,4 +52,8 @@ font-weight: 400;
 
 .article_title {
     margin-top: 1em;
+}
+
+.article_title {
+  padding: 5em 4em;
 }

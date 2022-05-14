@@ -3,13 +3,7 @@ import Bg_image from "./../Images/bg-intro-desktop.svg";
 import Bg_image_top from "./../Images/image-mockups.png";
 
 export default function MainImages() {
-  const styleTop = {
-    // Adding media query..
-    "@media screen and (max-width: 768px)": {
-      objectPosition: "0 0",
-      display: "none",
-    },
-  };
+  
 
   return (
     <>
@@ -17,7 +11,7 @@ export default function MainImages() {
         <div
           className="main_bg_image"
           style={{
-            minWidth: "50vw",
+            minWidth: "50em",
             height: "100vh",
             backgroundImage: `url(${Bg_image})`,
             backgroundPosition: "bottom left",
@@ -28,12 +22,12 @@ export default function MainImages() {
           }}
         >
           <div className="main_bg_image_top">
-            <img
+            {/* <img
               id="top_image"
               src={Bg_image_top}
               alt="background_image"
               style={{
-                width: "100%",
+                width: "50em",
                 height: "100%",
                 backgroundPosition: "top",
                 // overflowX: "hidden",
@@ -44,7 +38,7 @@ export default function MainImages() {
                 // styleTop,
                 
               }}
-            />
+            /> */}
           </div>
         </div>
       </main>

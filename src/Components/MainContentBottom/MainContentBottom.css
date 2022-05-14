@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
-.text_bottom_container,
-.article_title {
+.text_bottom_container {
   padding: 5em;
   display: flex;
   gap: 20px;
@@ -33,7 +32,6 @@
   width: 20em;
   margin: 0 0.5em;
   object-fit: contain;
-
 }
 
 .options h2,
