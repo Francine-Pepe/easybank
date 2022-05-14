@@ -45,7 +45,7 @@ export default function Articles() {
 
         <div className="article_flex_container">
           {articles.map((articles, index) => (
-            <div className="articles">
+            <div className="articles" key={index}>
               <img src={articles.image} alt={articles.alt} />
               <div className="articles_padding">
                 <h6>{articles.author}</h6>
