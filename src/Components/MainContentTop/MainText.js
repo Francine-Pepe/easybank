@@ -13,7 +13,9 @@ export default function MainText() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <RequestButton />
+        <div className="button_container">
+          <RequestButton />
+        </div>
       </main>
     </>
   );
