@@ -39,14 +39,14 @@ export default function MainContentBottom() {
     <>
       <main className="main_content_bottom">
         {text.map((text, index) => (
-          <div className="text_bottom_container">
+          <div className="text_bottom_container" key={index}>
             <h1> {text.title} </h1>
             <p> {text.text} </p>
           </div>
         ))}
         <div className="options_container">
         {content.map((content, index) => (
-          <div className="options">
+          <div className="options" key={index}>
             <img src={content.image} alt="/" />
             <h2> {content.title} </h2>
             <p> {content.text} </p>
